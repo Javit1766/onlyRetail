@@ -1,39 +1,39 @@
 export function login2() {
     // Contenedor principal
-    const container = document.createElement("div");
+    let container = document.createElement("div");
     container.className = "login-container";
-
+    
     // Sección morada
-    const leftSection = document.createElement("div");
+    let leftSection = document.createElement("div");
     leftSection.className = "left-section";
 
-    const backArrow = document.createElement("span");
+    let backArrow = document.createElement("span");
     backArrow.innerHTML = "←";
     backArrow.className = "back-arrow";
     leftSection.appendChild(backArrow);
 
-    const title = document.createElement("h1");
+    let title = document.createElement("h1");
     title.textContent = "Welcome Back!";
     leftSection.appendChild(title);
 
-    const description = document.createElement("p");
+    let description = document.createElement("p");
     description.textContent =
         "Yay! You're back! Thanks for shopping with us. We have excited deals and promotions going on, grab your pick now!";
     leftSection.appendChild(description);
 
-    const loginText = document.createElement("h3");
+    let loginText = document.createElement("h3");
     loginText.textContent = "LOG IN";
     leftSection.appendChild(loginText);
 
     // Sección blanca
-    const rightSection = document.createElement("div");
+    let rightSection = document.createElement("div");
     rightSection.className = "right-section";
 
     // Email
-    const emailLabel = document.createElement("label");
+    let emailLabel = document.createElement("label");
     emailLabel.textContent = "Email address";
 
-    const emailInputWrapper = document.createElement("div");
+    let emailInputWrapper = document.createElement("div");
     emailInputWrapper.className = "input-wrapper";
     emailInputWrapper.innerHTML = `
         <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg></span>
@@ -42,10 +42,10 @@ export function login2() {
     `;
 
     // Password
-    const passwordLabel = document.createElement("label");
+    let passwordLabel = document.createElement("label");
     passwordLabel.textContent = "Password";
 
-    const passwordInputWrapper = document.createElement("div");
+    let passwordInputWrapper = document.createElement("div");
     passwordInputWrapper.className = "input-wrapper";
     passwordInputWrapper.innerHTML = `
         <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"/></svg></span>
@@ -53,7 +53,7 @@ export function login2() {
     `;
 
     // Opciones
-    const optionsRow = document.createElement("div");
+    let optionsRow = document.createElement("div");
     optionsRow.className = "options-row";
     optionsRow.innerHTML = `
         <label> <span class="icon"><svg xmlns="<svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="20px" fill="#1f1f1f"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg> Remember me</label>
@@ -61,12 +61,12 @@ export function login2() {
     `;
 
     // Botón login
-    const loginBtn = document.createElement("button");
+    let loginBtn = document.createElement("button");
     loginBtn.textContent = "LOG IN";
     loginBtn.className = "login-btn";
 
     // Crear cuenta
-    const createAccount = document.createElement("p");
+    let createAccount = document.createElement("p");
     createAccount.className = "create-account";
     createAccount.innerHTML = `Not registered yet? <a href="#">Create an Account</a>`;
 

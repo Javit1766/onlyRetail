@@ -52,8 +52,8 @@
 .right-section {
     background: rgb(255, 255, 255);
     display: grid;
-    gap: 20px;
-    padding: 20px;
+    gap: 50px;
+    padding: 10px;
 }
 
 label {
@@ -66,7 +66,7 @@ label {
     align-items: center;
     border: 1px solid #a200ff;
     border-radius: 10;
-    padding: 6px;
+    padding: 10px;
 }
 
 .icon {
