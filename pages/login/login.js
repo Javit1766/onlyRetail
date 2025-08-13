@@ -1,4 +1,4 @@
-export function login(){
+export function login() {
     let div = document.createElement('div');
     div.className = "login";
 
@@ -18,9 +18,15 @@ export function login(){
     div.appendChild(h3);
 
     let boton1 = document.createElement('a');
-    boton1.href ="../../pages/login2/login2.html";
+    boton1.href = "../../pages/login2/login2.html";
     boton1.className = "boton1"
     boton1.textContent = "LOG IN"
+    // 🔹 Event listener para LOG IN
+    boton1.addEventListener('click', (event) => {
+        event.preventDefault(); // evita la redirección automática
+        console.log("Botón LOG IN clickeado");
+        window.location.href = boton1.href; // redirección manual si quieres
+    });
     div.appendChild(boton1);
 
     let span4 = document.createElement('span');
@@ -32,6 +38,12 @@ export function login(){
     boton2.href = "../../pages/register/register.html";
     boton2.className = "boton2"
     boton2.textContent = "REGISTER"
+    // 🔹 Event listener para REGISTER
+    boton2.addEventListener('click', (event) => {
+        event.preventDefault();
+        console.log("Botón REGISTER clickeado");
+        window.location.href = boton2.href;
+    });
     div.appendChild(boton2);
 
     return div;
